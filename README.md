@@ -14,8 +14,8 @@ I'm operating under assumption based on [this post](https://forums.homeseer.com/
 	```
 1. Copy HomeSeer dlls into ~/HomeSeer
 1. Take a look at ./setup.sh from this repository. I'd recommend that you run commands outside of the script to understand what they do. They can break your SSH setup. Also they use my homeseer IP address, which you'll need to change.
-  - it sets up public key SSH autorization for your homeseer - that will be needed top copy files into your homeseer
-  - configures cs-script to use HomeSeer API from ~/Desktop/HomeSeer/dlls by default
+	- it sets up public key SSH autorization for your homeseer - that will be needed top copy files into your homeseer
+	- configures cs-script to use HomeSeer API from ~/Desktop/HomeSeer/dlls by default
 1. From your homeseer installation copy FTD2XX_NET.dll HSCF.dll HomeSeerAPI.dll Insteon.dll Mail.dll RssToolkit.dll Scheduler.dll into ~/Desktop/HomeSeer/dlls
 1. Clone my scripts repository
 	```
