@@ -272,7 +272,16 @@ static IHSApplication CreateHs() {
     return client.ServiceProxy;
 }
 
-static IHSApplication hs = CreateHs();";
+private IHSApplication hs;
+
+ScriptClass(IHSApplication hs){
+    this.hs = hs;
+}
+
+public static void Main() {
+    new ScriptClass(CreateHs()).Main(null);
+}
+";
 
     public static bool Compile(ref string code, string scriptFile, bool isPrimaryScript, Hashtable context)
     {
